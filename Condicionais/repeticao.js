@@ -120,7 +120,7 @@ do {
 } while (palpite !== numeroSecreto);
 */
 
-for (let i = 1; i <= 10; i++) {
+/*for (let i = 1; i <= 10; i++) {
     console.log(`Número: ${i}`)
 }
 
@@ -137,3 +137,178 @@ if (Number.isNaN(numero)) {
         
     }
 }
+*/
+
+/*const numeros = [5, 412, 8, 3, 19, 7, 25];
+
+const procurado = 19;
+
+for (const num ===*/
+
+//SENHA com limite de 3 tentativas
+
+/*const senhaCorreta = "abc123";
+
+const maxTentativas = 3;
+
+for (let tentativas = 1; tentativa <= maxTentativas; tentativas++){
+
+    const senha = prompt(`Tentativa ${tentativas}/${maxTentativas} - Digite a Senha:`);
+
+    if (senha === senhaCorreta) {
+
+        console.log("Acesso Liberado!");
+
+        break;
+        
+    } else {
+        
+        console.log("Senha incorreta!");
+
+        if (tentativa === maxTentativas) {
+
+            console.log("Conta Bloqueada!");
+        }
+    }
+}
+*/
+
+/*for (let i = 1; i <= 10; i++) {
+
+    if (i % 2 === 0) {
+        continue;
+    }
+    console.log(i)
+}
+*/
+
+//Mostrar apenas APROVADOS (nota >= 7)
+/*const alunos = [
+  { nome: "Ana", nota: 8.5 },
+  { nome: "Bruno", nota: 5.0 },
+  { nome: "Carlos", nota: 9.0 },
+  { nome: "Diana", nota: 4.5 },
+  { nome: "Eduardo", nota: 7.5 }
+];
+
+
+for (const aluno of alunos) {
+
+    if (aluno.nota < 7) {
+        continue;
+    }
+    
+    console.log(`${aluno.nome} - Nota: ${aluno.nota}`)
+}
+*/
+
+//Contar vogais
+
+/*const frase = prompt("Digite uma frase:");
+
+const vogais ="aeiouAEIOU";
+
+let contador = 0;
+
+let vogaisEncontradas = [];
+
+for (const letra of frase) {
+
+    if (vogais.includes(letra)) {
+
+        contador++
+
+        vogaisEncontradas.push(letra)
+        
+    }
+    
+}
+*/
+
+/*console.log(`/nFrase: "${frase}"`);
+
+console.log(`Quantidade de vogais: "${contador}`);
+
+console.log(`Vogais encontradas: "${vogaisEncontradas.join(",")}"`);
+*/
+
+/*const frase = prompt("Digite uma frase:");
+
+let vogais = [];
+
+let consoante = [];
+
+for (const letra of frase) {
+
+    const caractere = letra.toLowerCase();
+
+    if (caractere >= "a" && caractere <= "z") {
+        
+        if ("aeiou".includes(caractere)) {
+
+            vogais.push()
+            
+        }
+    } else {
+        
+        consoantes.push(letra)
+    }
+}
+*/
+
+/*Array.metodo((elemento, index, array) => {
+    return;
+})
+*/
+
+/*const frutas = ["Maçã", "Banana", "Uva"];
+
+frutas.forEach((element, index) => {
+    console.log(index, element)
+});
+
+for (let i = 0; i < frutas.length ; i++) {
+
+}
+*/
+
+//Filter
+
+/*const novoArray = Array.filter((element) => {
+    return condicao;
+});
+
+const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 },
+  { nome: "João", idade: 18 },
+  { nome: "Ana", idade: 22 },
+];
+
+const maioresDeIdade = pessoas.filter((pessoa) => {
+
+  return pessoa.idade >= 18;
+});
+
+console.log(maioresDeIdade)
+*/
+
+/*const numeros = [1,2,3,4,5,6,7,8];
+
+const pares = numeros.filter((numero) => {
+    return numero % 2 === 0
+});
+
+console.log(pares)
+*/
+
+const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 },
+  { nome: "João", idade: 18 },
+  { nome: "Ana", idade: 22 },
+];
+
+const idosos = pessoas.filter((pessoa) => {
+    return pessoa.idade > 80;
+});
