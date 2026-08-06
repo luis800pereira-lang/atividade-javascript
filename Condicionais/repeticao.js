@@ -302,7 +302,7 @@ const pares = numeros.filter((numero) => {
 console.log(pares)
 */
 
-const pessoas = [
+/*const pessoas = [
   { nome: "Lucas", idade: 20 },
   { nome: "Maria", idade: 17 },
   { nome: "João", idade: 18 },
@@ -312,3 +312,221 @@ const pessoas = [
 const idosos = pessoas.filter((pessoa) => {
     return pessoa.idade > 80;
 });
+
+console.log(idosos)
+*/
+
+//Crie um array com vários números.
+//Use filter para mostrar apenas os números maiores que 50
+
+/*const numeros = [10,20,30,40,50,60,70,80];
+
+const MaioresQue50 = numeros.filter((numero) => {
+    return numero > 50;
+});
+
+console.log(MaioresQue50)
+*/
+
+//MAP   
+
+/*const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 },
+  { nome: "João", idade: 18 },
+  { nome: "Ana", idade: 22 },
+];
+
+const nomes = pessoas.map((pessoa) => {
+    return pessoa.nome.toUpperCase();
+});
+console.log(nomes)
+
+const numeros = [1, 2, 3, 4, 5];
+
+const dobro = numeros.map((numero) => {
+    return numero * 2;
+});
+console.log(dobro);
+*/
+
+/*const produtos = ["Mouse", "Teclado", "Monitor"];
+
+const frases = produtos.map((produto) => {
+    return `Produto:${produto}`
+});
+
+console.log((frases));
+*/
+
+/*const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 }
+];
+
+const resultado = pessoas.map((pessoa) => {
+    return {
+        nome: pessoa.nome,
+
+        maiorIdade: pessoa.idade >= 18
+    }
+});
+console.log(resultado);
+*/
+
+//Use o map para transformar um array de preços em preços com desconto de 10%
+
+/*const precos = [100, 200, 300];
+
+const desconto = precos.map((preco) => {
+    return preco * 0.9;
+});
+
+console.log(desconto);
+*/
+
+/*Use map para transformar:
+[1,2,3,4]
+em 
+["Número 1", "Número 2"...]
+*/
+
+/*const numeros = [1,2,3,4];
+
+const resultado = numeros.map((numero) => {
+    return `Número ${numero}`
+});
+console.log(resultado);
+*/
+
+//Find
+
+/*const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 },
+  { nome: "João", idade: 18 },
+  { nome: "Ana", idade: 22 },
+];
+
+const maria = pessoas.find((pessoa) => {
+    return pessoa.nome === "Maria";
+});
+
+console.log(maria);
+
+if (maria) {
+    console.log("Pessoa encontrada;");
+    console.log(maria)
+} else {
+    console.log("Pessoa encontrada:");
+}
+*/
+
+/*const numeros = [5,10,15,20,25];
+/// Procurar primeiro número maior que 18
+
+const encontrado = numeros.find((numeros) => {
+    return
+});
+*/
+
+/*const usuarios = [
+  { id:1, nome:"Lucas" },
+  { id:2, nome:"Maria" },
+  { id:3, nome:"João" }
+];
+
+const usuario = usuarios.find((u) => {
+    return u.id === 2;
+});
+
+console.log(usuario);
+*/
+
+//Reduce
+
+/*Array.reduce((acc, element) => {
+    return novoAcc
+} valorInicial);
+*/
+
+/*const numeros = [10, 20, 30];
+
+const soma = numeros.reduce((acc, numero) => {
+
+    console.log("ACC", acc);
+    console.log("Número atual", numero);
+
+    return acc + numero
+}, 0);
+
+console.log(soma)
+*/
+
+/*const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 },
+  { nome: "João", idade: 18 },
+  { nome: "Ana", idade: 22 },
+];
+
+const totaLidades = pessoas.reduce((acumulador, pessoa) => {
+    return acumulador + pessoa.idade;
+}, 0);
+*/
+
+/*const pessoas = [
+    { nome: "Lucas"},
+    { nome: "Maria"},
+    { nome: "João"},
+];
+
+const nomes = pessoas.reduce((acc, pessoa) => {
+    return acc + " " + pessoa.nome;
+
+}, "");
+
+console.log(nomes);
+*/
+
+/*const nomes = ["Lucas", "Mario", "João"];
+
+const frase = nomes.reduce((acc, nome) => {
+    return acc + " " + nome;
+});
+console.log(frase);
+
+const inicio = prompt("Digite o início da frase:");
+
+const frase = nomes.reduce((acumulador, nome) => {
+    return acumulador + " " + nome
+}, inicio);
+
+console.log(frase)
+*/
+
+/*const nomes = ["Lucas", "Maria", "João"];
+
+const frase = prompt("Digite uma frase:");
+
+const palavras = frase.split(" ");
+
+const resultado = palavras.reduce((acumulador, palavra) => {
+    return acumulador + " " + palavra
+});
+
+console.log(resultado);
+*/
+
+//Use reduce para descobrir:
+//qual o maior número do array.
+
+const numeros= [10,50,30,100,25];
+
+const maior = numeros.reduce((acc, numero) => {
+    if (numero > acc) {
+       return numero 
+    }
+
+    return acc
+}, numeros[0]);
