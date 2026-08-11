@@ -521,7 +521,7 @@ console.log(resultado);
 //Use reduce para descobrir:
 //qual o maior número do array.
 
-const numeros= [10,50,30,100,25];
+/*const numeros= [10,50,30,100,25];
 
 const maior = numeros.reduce((acc, numero) => {
     if (numero > acc) {
@@ -530,3 +530,160 @@ const maior = numeros.reduce((acc, numero) => {
 
     return acc
 }, numeros[0]);
+*/
+
+/*constfilmes= [
+  { nome:"Vingadores", nota:9 },
+  { nome:"Batman", nota:7 },
+  { nome:"Dragon Ball", nota:10 },
+  { nome:"Matrix", nota:8 }
+];
+*/
+/*
+# Parte 1
+Use filter para pegar notas >= 8
+---
+# Parte 2
+
+
+Use map para pegar apenas nomes
+
+---
+# Parte 3
+
+```
+Use find para encontrar "Batman"
+```
+
+---
+
+# Parte 4
+
+Use reduce para somar todas as notas
+*/
+
+
+
+//Parte 1: Use filter para pegar notas >= 8
+
+/*const filmes = [
+  { nome:"Vingadores", nota:9 },
+  { nome:"Batman", nota:7 },
+  { nome:"Dragon Ball", nota:10 },
+  { nome:"Matrix", nota:8 }
+];
+
+const notasMaiores = filmes.filter((filme) => {
+
+  return filme.nota >= 8;
+});
+console.log(notasMaiores)
+*/
+
+//Parte 2, 3, 4
+
+/*const filmes= [
+  { nome:"Vingadores", nota:9 },
+  { nome:"Batman", nota:7 },
+  { nome:"Dragon Ball", nota:10 },
+  { nome:"Matrix", nota:8 }
+];
+
+const filmesBons = filmes.filter((filme) => {
+    return filme.nota >= 8
+});
+console.log(filmesBons);
+
+const nomes = filmes.map((filme) => {
+    return filme.nome;
+});
+console.log(nomes);
+
+const batman = filmes.find((filme) => {
+    return filme.nome === "Batman"
+});
+console.log(batman);
+
+const somaNotas = filmes.reduce((acc, filme) => {
+    return acc + filme.nota;
+});
+console.log(somaNotas);
+*/
+
+/*const dia = 3;
+
+switch (dia) {
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("segunda");
+        break;
+    case  3:
+        console.log("Terça")
+        break;
+
+    default:
+        console.log("Dia Inválido")
+        break;
+}
+*/
+
+/*const n1 = Number(prompt("Digite o primeiro número:"));
+const n2 = Number(prompt("Digite o segundo número:"));
+const operacao = Number(prompt("Digite a operação (+,-,* ou /):"));
+
+switch (operacao) {
+    case "+":
+        console.log(`Resultado: ${n1 + n2}`)
+        break;
+    case "/"
+      if (n2 === 0) {
+        console.log("Erro: não é possivel dividir por zero")
+      } else {
+        console.log(`Resultado: ${n1 / n2}`)
+      }
+
+    default:
+        console.log(`Operação não encontrada!`)
+        break;
+}
+*/
+
+/*
+Crie um sistema de menu de videogame
+
+1: Jogar
+2: Configurações
+3: Créditos
+4: Sair
+*/
+
+let opcao;
+
+do {
+    opcao = prompt(
+        "===Menu===\n" +
+        "1- Jogar\n" +
+        "2 - Configurações\n" +
+        "3 - Créditos\n" +
+        "4 - Sair"
+    );
+
+    switch (opcao) {
+        case "1":
+            alert("Iniciando jogo...");
+            break;
+        case "2":
+            alert("Abrindo configurações...");
+            break;
+        case "3":
+            alert("Exibindo créditos...");
+            break;
+        case "4":
+            alert("Saindo...");
+            break;
+        default:
+            alert("Opção inválida")
+    }
+} while (opcao !== 4);
